@@ -1,25 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: 17px;
-  ;
-}
-
-.container {
-  width: 1200px;
-  margin: auto;
 }
 
 header {
   background-image: url(../images/wanderer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: #00000042;
   background-blend-mode: multiply;
-  background-position: contain;
 }
 
 .navbar {
@@ -75,13 +74,13 @@ nav ul li:last-child {
 .banner {
   text-align: center;
   color: white;
-  padding: 155px 0px;
+  padding: 150px 0px;
 }
 
 .banner h3 {
   font-style: italic;
   font-size: 30px;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
 }
 
 .banner h1 {
@@ -89,7 +88,7 @@ nav ul li:last-child {
 }
 
 .banner span {
-  background-color: coral;
+  background-color: yellow;
   height: 3px;
   width: 123px;
   display: block;
@@ -101,8 +100,179 @@ nav ul li:last-child {
   border: none;
   border-radius: 50px;
   font-size: 18px;
-  background-color: #ff7f50bf;
-  color: white;
+  background-color: #ffff00;
+  color: red;
   letter-spacing: 4px;
   font-weight: bold;
 }
+
+/* upcoming section */
+
+.upcoming {
+  text-align: center;
+}
+
+.upcoming h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.upcoming h2 span {}
+
+.upcoming_below {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content_below {
+  background-color: rebeccapurple;
+  margin: 20px;
+  padding: 30px;
+}
+
+.content_below img {
+  width: 426px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+}
+
+header {
+  background-image: url(../images/wanderer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #00000042;
+  background-blend-mode: multiply;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {}
+
+.logo h2 {
+  line-height: 1.3;
+}
+
+.logo h2 a {
+  text-decoration: none;
+  color: black;
+  color: whitesmoke;
+  font-size: 400;
+}
+
+.logo h2 a span {
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: yellow;
+}
+
+nav {}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:last-child {
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 7px 14px;
+}
+
+/* banner section starts */
+.banner {
+  text-align: center;
+  color: white;
+  padding: 150px 0px;
+}
+
+.banner h3 {
+  font-style: italic;
+  font-size: 30px;
+  margin-bottom: -2px;
+}
+
+.banner h1 {
+  font-size: 55px;
+}
+
+.banner span {
+  background-color: yellow;
+  height: 3px;
+  width: 123px;
+  display: block;
+  margin: auto;
+}
+
+.banner button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: #ffff00;
+  color: red;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+/* upcoming section */
+
+.upcoming {
+  text-align: center;
+}
+
+.upcoming h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.upcoming h2 span {}
+
+.upcoming_below {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.content_below {
+  margin: auto;
+  width: 510px;
+}
+
+.content_below img {
+  width: 510px;
+  border-radius: 10px;
+}
+
+.content_below h4 {}
+
+.content_below p {}
+
+.content_below a {}
