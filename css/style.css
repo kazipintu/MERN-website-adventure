@@ -112,7 +112,6 @@ nav ul li:last-child {
 }
 
 /* upcoming section */
-
 .upcoming {
   text-align: center;
   margin: 50px 0 70px;
@@ -167,7 +166,6 @@ nav ul li:last-child {
 }
 
 /* explorer section */
-
 .explore_main {
   padding: 250px 0;
   background-image: url(../images/father.jpg);
@@ -205,13 +203,17 @@ nav ul li:last-child {
 .explore_item p {}
 
 .explore_item a {
+  display: block;
+  width: 80%;
+  text-align: right;
   text-decoration: none;
   letter-spacing: 3px;
   color: coral;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
 }
 
+/* tour section starts */
 .tour {
   display: flex;
   margin: 50px 0;
@@ -219,7 +221,7 @@ nav ul li:last-child {
 
 .tour-item {
   width: 33.33%;
-  margin: 20px;
+  margin: 7.5px;
 }
 
 .tour-item h3 {
@@ -253,21 +255,324 @@ nav ul li:last-child {
 }
 
 .tour-item .img-1 {
-    height: 400px;
-    object-fit: cover;
-    margin: 0 0 30px 0;
+  height: 400px;
+  object-fit: cover;
+  margin: 0 0 10px 0;
 }
 
 .tour-item .img-2 {
-    height: 600px;
-    object-fit: cover;
-    margin: 0 0 30px 0;
+  height: 600px;
+  object-fit: cover;
+  margin: 0 0 10px 0;
 }
 
-footer{
+/* footer section */
+footer {
   background-color: coral;
   color: whitesmoke;
   font-size: 30px;
   text-align: center;
   padding: 20px 0;
+}
+
+
+/* Small devices (phones, display up to 668px wide) */
+@media only screen and (max-width: 600px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .logo h2 {
+    font-size: 17px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 35px;
+  }
+
+  nav {}
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  nav ul li:last-child {
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 2px 10px;
+  }
+
+  /* banner starts */
+  .banner {
+    padding: 50px 0px;
+  }
+
+  .banner h3 {
+    font-size: 15px;
+  }
+
+  .banner h1 {
+    font-size: 23px;
+  }
+
+  .banner span {
+    width: 85px;
+  }
+
+  .banner button {
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  /* upcoming section */
+  .upcoming h2 {
+    font-size: 30px;
+  }
+
+  .upcoming span {
+    width: 85px;
+  }
+
+  .upcoming_below {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+  }
+
+  .content_below {
+    width: 90%;
+  }
+
+  .content_below img {
+    width: 100%;
+  }
+}
+
+/* Medium devices (phones/tablets, display from 601px up to 699px wide) */
+@media only screen and (min-width: 601px) and (max-width: 699px) {
+  .container {
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .logo h2 {
+    font-size: 17px;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 35px;
+  }
+
+  nav {}
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  nav ul li:last-child {
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 2px 10px;
+  }
+
+  /* banner starts */
+  .banner {
+    padding: 50px 0px;
+  }
+
+  .banner h3 {
+    font-size: 15px;
+  }
+
+  .banner h1 {
+    font-size: 23px;
+  }
+
+  .banner span {
+    width: 85px;
+  }
+
+  .banner button {
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  /* upcoming section */
+  .upcoming h2 {
+    font-size: 30px;
+  }
+
+  .upcoming span {
+    width: 85px;
+  }
+
+  .upcoming_below {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+  }
+
+  .content_below {
+    width: 90%;
+  }
+
+  .content_below img {
+    width: 100%;
+  }
+}
+
+/* Large devices (desktops, display from 700px up to 991px) */
+@media only screen and (min-width: 700px) and (max-width: 991px) {
+  .container {
+    width: 95%;
+  }
+
+  /* banner section starts */
+  .banner {
+    padding: 50px 0px 50px 0px;
+  }
+
+  /* upcoming section */
+
+  .upcoming h2 {
+    font-size: 50px;
+  }
+
+  .upcoming span {
+    background-color: coral;
+    height: 4px;
+    width: 123px;
+    display: block;
+    margin: 0px auto 30px;
+  }
+
+  .upcoming_below {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    width: 100%
+  }
+
+  .content_below {
+    margin: auto;
+    /* width: 100%; */
+  }
+
+  .content_below img {
+    width: 510px;
+    border-radius: 10px;
+    box-shadow: 9px 9px 4px #ff7f508f;
+  }
+
+  .content_below h4 {
+    font-size: 20px;
+  }
+
+  .content_below p {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .content_below a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: coral;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+}
+
+/* Large devices (desktops, display from 992px up to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 90%;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+  }
+
+  /* banner section starts */
+  .banner h3 {
+    font-size: 50px;
+  }
+
+  .banner h1 {
+    font-size: 75px;
+  }
+
+  .banner span {
+    height: 6px;
+    width: 200px;
+  }
+
+  .banner button {
+    padding: 20px 40px;
+    font-size: 40px;
+  }
+}
+
+/* Extra large devices (large desktops, display from 1200px and above) */
+@media only screen and (min-width: 1200px) {
+  container {
+    width: 90%;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+  }
+
+  /* banner section starts */
+
+
+  .banner h3 {
+    font-size: 50px;
+  }
+
+  .banner h1 {
+    font-size: 75px;
+  }
+
+  .banner span {
+    height: 6px;
+    width: 200px;
+  }
+
+  .banner button {
+    padding: 20px 40px;
+    font-size: 40px;
+  }
 }
