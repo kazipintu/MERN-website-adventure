@@ -57,6 +57,11 @@
   }
 
   /* upcoming section */
+
+  .upcoming {
+    margin: auto;
+  }
+
   .upcoming h2 {
     font-size: 30px;
   }
@@ -66,14 +71,15 @@
   }
 
   .upcoming_below {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 15px;
-    width: 100%;
+    justify-content: center;
+    width: 100%
   }
 
   .content_below {
-    width: 90%;
-    margin-bottom: 30px;
+    margin: auto;
+    /* width: 100%; */
   }
 
   .content_below h4 {
@@ -155,13 +161,13 @@
   .tour-item .img-1 {
     height: 600px;
     object-fit: cover;
-    margin: 20px 10px 0 0;
+    margin: 20px 0 10px 0;
   }
 
   .tour-item .img-2 {
     height: 600px;
     object-fit: cover;
-    margin: 20px 10px 0 0;
+    margin: 20px 0 10px 0;
   }
 
   /* footer */
@@ -269,13 +275,13 @@
   .tour-item .img-1 {
     height: 600px;
     object-fit: cover;
-    margin: 20px 10px 0 0;
+    margin: 20px 0 10px 0;
   }
 
   .tour-item .img-2 {
     height: 600px;
     object-fit: cover;
-    margin: 20px 10px 0 0;
+    margin: 20px 0 10px 0;
   }
 }
 
